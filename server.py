@@ -8,6 +8,7 @@ def index():
 @app.route('/checkout', methods=['POST'])         
 def checkout():
     print(request.form)
+    print('user POSTed checkout')
     return render_template("checkout.html")
 
 @app.route('/fruits')         
